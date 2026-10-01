@@ -28,23 +28,6 @@ BuildRequires:  pkgconfig(libseat)
 BuildRequires:  pkgconfig(systemd)
 BuildRequires:  pkgconfig(udev)
 BuildRequires:  pkgconfig(xkbcommon)
-# Portal implementations used by niri
-Recommends:     xdg-desktop-portal-gtk
-Recommends:     xdg-desktop-portal-gnome
-Recommends:     gnome-keyring
-Recommends:     polkit-gnome
-# Recommended utilities, bound in the default config
-Recommends:     alacritty
-Recommends:     fuzzel
-Recommends:     swaylock
-# Recommended utilities
-Recommends:     swaybg
-Recommends:     mako
-Recommends:     xwayland-run
-
-# Niri by deflaut at launch trying to spawn waybar. Lets add it as recommended (per upstream request).
-# This can be configured to other packages.
-Recommends:     waybar
 
 %description
 A scrollable-tiling Wayland compositor.
